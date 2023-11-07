@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div.head {
+            background-color: #272882;
+            width: 100%;
+        } */
+        .logo {
+            background-color: #272882;
+            /* display: inline; */
+            float: left;
+            box-sizing: border-box;
+            width: 40%;
+            padding-left: 400px;
+        }
+        .menu {
+            background-color: #272882;
+            /* display: inline; */
+            float: left;
+            box-sizing: border-box;
+            height: 54px;
+            width: 60%;
+        }
+        .menu>ul>li {
+            list-style-type: none;
+            display: inline;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            font-size: medium;
+        }
+        /* .menu_col_1>li {
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(221, 118, 173);
+        } */
+        .menu>ul>li>ul {
+            display: none;
+            list-style-type: none;
+            font-size: medium;
+        }
+        .menu_khoahoc:hover .menu_col_1 {
+            display: block;
+        }
+        
+        .menu_khoahoc {
+            position: relative;
+        }
+        
+        .menu_col_1 {
+            position: absolute;
+            display: block;
+            background-color: #272882;
+            list-style-type: none;
+            margin-top: 22px;
+            padding-left: 15px;
+            padding-right: 20px;
+            width: max-content;
+            font-size: medium;
+            box-sizing: border-box;
+            
+        }
+        .menu_col_1>li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            /* box-sizing: border-box;
+            padding-left: 0px; */    
+        }
+        .menu_col_1_parent>ul {
+            list-style: none;
+            display: none;
+            font-size: medium;
+        }
+        
+        .menu_col_1_parent:hover .menu_col_1_child {
+            display: block;
+            /* background-color: #272882; */
+            
+        } 
+        .menu_col_1_parent {
+            position: relative;
+            
+        }
+        .menu_col_1_child {
+            position: absolute;
+            display: block;
+            background-color: #272882;
+            top: 0px;
+            left: 200px;
+            width: max-content;
+            font-size: medium;
+            
+        } 
+        .menu_col_1_child>li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+            margin: 0px;
+            border: 0px;
+            padding-left: 0px;  
+        }
+        .menu_lichkhaigiang:hover .menu_col_2 {
+            display: block;
+        }
+        .menu_lichkhaigiang {
+            position: relative;
+        }
+        .menu_col_2 {
+            display: block;
+            background-color: #272882;
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            width: max-content;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .menu_col_2>li {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .menu_kienthuc:hover .menu_col_3 {
+            display: block;
+        }
+        .menu_kienthuc {
+            position: relative;
+        }
+        .menu_col_3 {
+            position: absolute;
+            display: block;
+            top: 60px;
+            left: 0px;
+            background-color: #272882;
+            width: max-content;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .menu_col_3>li {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .menu_vecodegym:hover .menu_col_4 {
+            display: block;
+        }
+        .menu_vecodegym {
+            position: relative;
+        }
+        .menu_col_4 {
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            display: block;
+            background-color: #272882;
+            width: max-content;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .menu_col_4>li {
+            
+            padding-top: 10px;
+            padding-bottom: 10px; 
+        }
+    </style> 
+
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <img src="https://cdn.codegym.vn/wp-content/uploads/2021/08/CodeGym-Logo.webp" alt="">
+        </div>
+        
+        <div class="menu">
+            <ul>
+                <li class="menu_khoahoc">KHOÁ HỌC
+                        <ul class="menu_col_1">
+                            <li>KỸ SƯ CNTT-ĐẠI HỌC</li>
+                            <li>BOOTCAMP FULL TIME</li>
+                            <li>BOOTCAMP PART TIME</li>
+                            <li>KHOÁ HỌC TỪ XA</li>
+                            <li class="menu_col_1_parent">KHOÁ HỌC MIỄN PHÍ
+                                <ul class="menu_col_1_child">
+                                    <li>NHẬP MÔN LẬP TRÌNH</li>
+                                    <li>NHẬP MÔN HTML/CSS</li>
+                                    <li>NHẬP MÔN DATA ANALYST</li>
+                                    <li>NHẬP MÔN PHÁT TRIỂN GAME</li>
+                                    <li>NHẬP MÔN BOOTSTRAP</li>
+                                    <li>NHẬP MÔN GIT VÀ GITHUB</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                <li class="menu_lichkhaigiang">LỊCH KHAI GIẢNG
+                    <ul class="menu_col_2">
+                        <li>CODEGYM SAIGON</li>
+                        <li>CODEGYM HANOI</li>
+                        <li>CODEGYM ONLINE</li>
+                        <li>CODEGYM HUE</li>
+                        <li>CODEGYM DANANG</li>
+                    </ul>
+                </li>
+                <li class="menu_kienthuc">KIẾN THỨC
+                    <ul class="menu_col_3">
+                        <li>CHIA SE KIEN THUC</li>
+                        <li>TAI NGUYEN LAP TRINH</li>
+                    </ul>
+                </li>
+                <li>TIN TỨC</li>    
+                <li class="menu_vecodegym">VỀ CODEGYM
+                    <ul class="menu_col_4">
+                        <li>GIOI THIEU</li>
+                        <li>VI SAO NEN CHON CODEGYM</li>
+                        <li>MO HINH BOOTSTRAP</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

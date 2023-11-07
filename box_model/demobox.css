@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(155, 29, 107);
+    border: 20px blueviolet solid;
+    padding: 50px;
+    box-sizing: border-box;
+    border-radius: 50%;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu1 {
+            list-style-type: 5;
+        }
+        .menu1>li {
+            display: inline;
+            padding: 5px;
+        }
+        .menu1>li>ul {
+            list-style-type: none;
+            display: none;
+        }
+        .menu1_first_child:hover .menu2 {
+            display: block;
+        }
+
+        .menu1_first_child {
+            position: relative;
+        }
+        .menu2 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: max-content;
+            
+        }
+        .menu3 {
+            display: none;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            
+        }
+        .menu2_last_child:hover .menu3{
+            display: block;
+        }
+        .menu2_last_child {
+            position: relative;
+        }
+        .menu2_last_child>ul {
+            list-style: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="menu1">
+            <li class="menu1_first_child">Khoa hoc
+                <ul class="menu2">
+                    <li>Ky su CNTT- dai hoc</li>
+                    <li>Bootcamp full time</li>
+                    <li>Bootcamp part time</li>
+                    <li class="menu2_last_child">Khoa hoc tu xa
+                        <ul class="menu3">
+                            <li>Nhap mon lap trinh</li>
+                            <li>nhap mon lap trinh</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Lich khai giang</li>
+            <li>Kien thuc</li>
+            <li>Tin tuc</li>
+            <li>Ve codegym</li>
+        </ul>
+    </div>
+</body>
+</html>

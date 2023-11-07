@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+div {
+    width: 400px;
+    border : 50px chartreuse solid;
+    padding: 50px 20px;    
+}
+
+p {
+    background-color: antiquewhite;
+    padding: 20px;
+    font-size: 30px;
+    color: green;
+    text-align: center;
+}

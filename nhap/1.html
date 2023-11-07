@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {  
+            background-color: #272882;
+        }
+        .logo {
+            margin-left: 20%;
+            float: left;
+        }
+        .menu {
+            
+            float: left;
+        }
+        .monhoc>li {
+            display: inline;
+        }
+        .a {
+            display: none;
+            position: relative;
+        }
+        .monhoc:hover .a {
+            display: block;
+        }
+        .a_daicuong {
+            display: none;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+        .a:hover .a_daicuong {
+            display: block;
+        }
+        .a_anhvan {
+            display: none;
+        }
+        .a:hover .a_anhvan {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://cdn.codegym.vn/wp-content/uploads/2021/08/CodeGym-Logo.webp" alt="">
+        </div>
+        <div class="menu">
+            <ul class="monhoc">MON HOC
+                <li class="a">DAI CUONG
+                    <ul class="a_daicuong">
+                        <li>TOAN</li>
+                        <li>Hoa</li>
+                    </ul>
+                </li>
+                <li class="a">ANH VAN
+                    <ul class="a_anhvan">
+                        <li>AV1</li>
+                        <li>AV2</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
